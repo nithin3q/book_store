@@ -11,7 +11,7 @@ const EditBooks = () => {
   const navigate=useNavigate()
   const {id}=useParams()
   useEffect(()=>{
-    axios.get(`http://localhost:5553/books/${id}`)
+    axios.get(`https://book-store-five-rose.vercel.app/books/${id}`)
     .then((response)=>{
         setAuthor(response.data.author)
         setPublishYear(response.data.publishYear)
