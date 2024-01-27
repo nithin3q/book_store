@@ -9,7 +9,7 @@ mongoose.connect('mongodb+srv://nithinappari:75nlIXu4s977F7U6@cluster0.7ljelcs.m
 
 
 const app=express()
-app.use(cors())
+app.use(cors(*))
 app.use(express.json())
 app.use('/books',bookRoute)
 
