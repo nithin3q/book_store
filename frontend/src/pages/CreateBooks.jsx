@@ -16,7 +16,7 @@ const CreateBooks = () => {
       publishYear,
   }
   setLoading(true)
-  axios.post('http://localhost:5553/books',data)
+  axios.post('https://book-store-five-rose.vercel.app/books',data)
   .then(()=>{
     setLoading(false)
     navigate('/')
