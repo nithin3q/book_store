@@ -11,7 +11,7 @@ const DeleteBooks = () => {
   const handleDeleteBook = () => {
     setLoading(true);
     axios
-      .delete(`http://localhost:5553/books/${id}`)
+      .delete(`https://book-store-five-rose.vercel.app/books/${id}`)
       .then(() => {
         setLoading(false);
         navigate('/');
