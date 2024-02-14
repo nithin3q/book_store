@@ -33,7 +33,7 @@ const EditBooks = () => {
       publishYear,
   }
   setLoading(true)
-  axios.put(`http://localhost:5553/books/${id}`,data)
+  axios.put(`https://book-store-five-rose.vercel.app/books/${id}`,data)
   .then(()=>{
     setLoading(false)
     navigate('/')
